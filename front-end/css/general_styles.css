@@ -1,0 +1,73 @@
+/* Styles that override the default bootstrap components
+in order to go along with our chosen palette of colors */
+
+.banner{
+    background-image: url("/images/banner.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: #EAD7D1;
+}
+footer p{
+    color: #1F1A38;
+}
+
+.website-title{
+    font-family: 'Pacifico', cursive;
+}
+.btn-outline-success{
+    color: #DD99BB !important;
+    border-color: #DD99BB !important;
+}
+
+.btn-outline-success:hover{
+    background-color: #7B506F !important;
+    border-color: #7B506F !important;
+    color: #FFF !important;
+}
+.btn-primary{
+    background-color: #7B506F !important;
+    border-color: #7B506F !important;
+}
+
+.btn-primary:hover{
+    background-color: #DD99BB !important;
+    border-color: #DD99BB !important;
+}
+
+.navbar-nav > li > .dropdown-menu > a:active{
+    background-color: #DD99BB;
+}
+
+h2{
+    color: #1F1A38;
+}
+.navbar{
+    background-color: #1F1A38 !important;
+}
+.sign-in-form, 
+.banner, 
+.sign-up-form, 
+.forgot-password-form
+{
+    margin-top: 55px;
+}
+
+.course-content-display{
+    padding-top: 70px;
+    padding-left: 70px;
+}
+
+.my-courses{
+    margin-top: 35px;
+}
+
+/* Adding the banner picture to the body of sign in/up pages */
+.sign-up, .sign-in, .forgot-password{
+    background-image: url("/images/banner.jpg");
+    background-repeat: no-repeat;
+}
+
+.text-success{
+    color: #1F1A38 !important;
+}

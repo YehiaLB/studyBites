@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>studyBites - Main Page</title>
+        <title>studyBites - My Courses</title>
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
         <link rel="stylesheet" href="css/general_styles.css" />
@@ -14,20 +14,17 @@
             <a class="navbar-brand" href="#">
                 <img src="/images/logo.png" width="110" height="30" class="d-inline-block align-top" alt="" />
             </a>
-
-            <!-- <a class="navbar-brand" href="#">studyBits</a> -->
-
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
                     
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown active">
                       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                        My Profile
                       </a>
@@ -40,18 +37,10 @@
                         <a class="dropdown-item" href="index_signed_out.html">Sign Out</a>
                       </div>
                     </li>
-
-
-
-
                     <li class="nav-item">
                         <a class="nav-link" href="About.html">About</a>
                     </li>
 
-
-                    <!-- <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li> -->
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Type to search courses" aria-label="Search" />
@@ -60,21 +49,11 @@
             </div>
         </nav>
 
-        <div class="jumbotron jumbotron-fluid banner">
-            <div class="container">
-                <h1 class="display-4">Welcome to <span class="website-title"><strong>studyBites</strong></span>!</h1>
-                <p class="lead">Start by searching our database of courses.</p>
+        
 
-                <form class="form-inline">
-                    <input class="form-control mr-sm-2" type="search" placeholder="photography, cooking..." aria-label="Search" />
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
-            </div>
-        </div>
-
-        <div class="album py-5 bg-light">
+        <div class="my-courses album py-5 bg-light">
             <div class="container">
-                <h2>Our most loved courses</h2>
+                <h2>My Courses</h2>
                 <br />
                 <div class="row">
                     <div class="col-md-4">
@@ -84,7 +63,7 @@
                                 <p class="card-text">Course description goes here. Write a concise introduction. Don't forget to insert tags so that we can filter them. You may also include course's star rating.</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Go to Course</button>
+                                        <a href="course_page.html"><button type="button"  class="btn btn-sm btn-outline-secondary">Go to Course</button></a>
                                         <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
                                     </div>
                                     <small class="text-muted">10 hrs</small>
@@ -101,8 +80,7 @@
                                 </p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Go to Course</button>
-                                        <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+                                        <a href="course_page.html"><button type="button"  class="btn btn-sm btn-outline-secondary">Go to Course</button></a>
                                     </div>
                                     <small class="text-muted">10 hrs</small>
                                 </div>
@@ -116,53 +94,7 @@
                                 <p class="card-text">Course description goes here. Write a concise introduction. Don't forget to insert tags so that we can filter them. You may also include course's star rating.</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Go to Course</button>
-                                        <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                                    </div>
-                                    <small class="text-muted">10 hrs</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="card mb-4 shadow-sm">
-                            <img class="card-img-top" src="/images/course_thumb.png" alt="Card image cap" />
-                            <div class="card-body">
-                                <p class="card-text">Course description goes here. Write a concise introduction. Don't forget to insert tags so that we can filter them. You may also include course's star rating.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Go to Course</button>
-                                        <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                                    </div>
-                                    <small class="text-muted">10 hrs</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card mb-4 shadow-sm">
-                            <img class="card-img-top" src="/images/course_thumb.png" alt="Card image cap" />
-                            <div class="card-body">
-                                <p class="card-text">Course description goes here. Write a concise introduction. Don't forget to insert tags so that we can filter them. You may also include course's star rating.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Go to Course</button>
-                                        <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                                    </div>
-                                    <small class="text-muted">10 hrs</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card mb-4 shadow-sm">
-                            <img class="card-img-top" src="/images/course_thumb.png" alt="Card image cap" />
-                            <div class="card-body">
-                                <p class="card-text">Course description goes here. Write a concise introduction. Don't forget to insert tags so that we can filter them. You may also include course's star rating.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Go to Course</button>
+                                        <a href="course_page.html"><button type="button"  class="btn btn-sm btn-outline-secondary">Go to Course</button></a>
                                         <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
                                     </div>
                                     <small class="text-muted">10 hrs</small>
@@ -178,7 +110,7 @@
                                 <p class="card-text">Course description goes here. Write a concise introduction. Don't forget to insert tags so that we can filter them. You may also include course's star rating.</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Go to Course</button>
+                                        <a href="course_page.html"><button type="button"  class="btn btn-sm btn-outline-secondary">Go to Course</button></a>
                                         <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
                                     </div>
                                     <small class="text-muted">10 hrs</small>
@@ -193,7 +125,7 @@
                                 <p class="card-text">Course description goes here. Write a concise introduction. Don't forget to insert tags so that we can filter them. You may also include course's star rating.</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Go to Course</button>
+                                        <a href="course_page.html"><button type="button"  class="btn btn-sm btn-outline-secondary">Go to Course</button></a>
                                         <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
                                     </div>
                                     <small class="text-muted">10 hrs</small>
@@ -208,7 +140,7 @@
                                 <p class="card-text">Course description goes here. Write a concise introduction. Don't forget to insert tags so that we can filter them. You may also include course's star rating.</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Go to Course</button>
+                                        <a href="course_page.html"><button type="button"  class="btn btn-sm btn-outline-secondary">Go to Course</button></a>
                                         <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
                                     </div>
                                     <small class="text-muted">10 hrs</small>
@@ -227,8 +159,6 @@
                     <a href="#">Back to top</a>
                 </p>
                 <p>&copy; <strong>studyBites</strong> 2020 - a final project for CMPS 278 at The American University of Beirut.</p>
-                <!-- <p>This website utilizes HTML/CSS, Twitter's Bootstrap and Javascript for the front-end.
-        It has PHP on the back-end.</p> -->
                 <br />
             </div>
         </footer>

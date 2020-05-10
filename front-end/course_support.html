@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>studyBites - Course Support</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+      <link rel="stylesheet" href="css/general_styles.css" />
+      <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+      <link rel="shortcut icon" href="/images/favicon.ico" />
+      <!-- The below is for the sidebar-->
+      <link rel="stylesheet" href="css/side-bar.css" />
+      <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <!-- for icons -->
+      <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+   </head>
+   <body>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+         <a class="navbar-brand" href="#">
+         <img src="/images/logo.png" width="110" height="30" class="d-inline-block align-top" alt="" />
+         </a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+               <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+               </li>
+               <li class="nav-item dropdown active">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  My Profile
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                     <a class="dropdown-item" href="profile.html">Edit Profile</a>
+                     <a class="dropdown-item" href="my_courses.html">My Courses</a>
+                     <a class="dropdown-item" href="settings.html">Settings</a>
+                     <a class="dropdown-item" href="accomplishments.html">Accomplishments</a>
+                     <div class="dropdown-divider"></div>
+                     <a class="dropdown-item" href="index_signed_out.html">Sign Out</a>
+                  </div>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="About.html">About</a>
+               </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+               <input class="form-control mr-sm-2" type="search" placeholder="Type to search courses" aria-label="Search" />
+               <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+         </div>
+      </nav>
+      <div class="container-fluid">
+         <div class="row">
+            <!-- Side Bar Navigation for Course Content -->
+            <!-- <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"> -->
+            <div class="d-none d-md-block bg-light sidebar">
+               <div class="nav-side-menu sidebar-sticky">
+                  <div class="brand">Course Title</div>
+                  <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+                  <div class="menu-list">
+                     <ul id="menu-content" class="menu-content collapse out">
+                        <li  data-toggle="collapse" data-target="#week1" class="collapsed">
+                           <a href="#"> &nbsp; &nbsp; Week #1 <span class="arrow"></span></a>
+                        </li>
+                        <ul class="sub-menu collapse" id="week1">
+                           <li><a href="#">Subject #1</a></li>
+                           <li><a href="#">Subject #2</a></li>
+                           <li><a href="#">Subject #3</a></li>
+                           <li><a href="#">Subject #4</a></li>
+                        </ul>
+                        <li  data-toggle="collapse" data-target="#week2" class="collapsed">
+                            <a href="#">&nbsp; &nbsp; Week #2<span class="arrow"></span></a>
+                        </li>
+                        <ul class="sub-menu collapse" id="week2">
+                           <li><a href="#">Subject #1</a></li>
+                           <li><a href="#">Subject #2</a></li>
+                           <li><a href="#">Subject #3</a></li>
+                           <li><a href="#">Subject #4</a></li>
+                        </ul>
+                        <li data-toggle="collapse" data-target="#week3" class="collapsed">
+                            <a href="#">&nbsp; &nbsp; Week #3<span class="arrow"></span></a>
+                        </li>
+                        <ul  class="sub-menu collapse" id="week3">
+                            <li><a href="#">Subject #1</a></li>
+                           <li><a href="#">Subject #2</a></li>
+                           <li><a href="#">Subject #3</a></li>
+                           <li><a href="#">Subject #4</a></li>
+                        </ul>
+                        <li class="sub-menu">
+                           <a href="course_info.html">
+                           <i class="fa fa-book fa-lg"></i>Course Info</a>
+                        </li>
+                        <li class="sub-menu active">
+                           <a href="course_support.html">
+                           <i class="fa fa-copy fa-lg"></i>Support and Feedback</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <!-- <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10"> -->
+            <div class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+                <div class="course-content-display  justify-content-between align-items-center pb-2 mb-3 border-bottom">
+                  <h2>Course Support</h2>  
+                  <p>To communicate with the authors and TA's of this course, please leave a message below. <br>
+                      You can also drop us an email if you face any technical issues at ... 
+                  </p>
+                </div>
+                
+            </div>
+         </div>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   </body>
+</html>
