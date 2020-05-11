@@ -71,3 +71,241 @@ h2{
 .text-success{
     color: #1F1A38 !important;
 }
+
+/* Profile Page */
+.profile-container{
+    padding-top: 110px;
+}
+.profile-details{
+    margin-top: -50px;
+}
+.emp-profile{
+    padding: 3%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 0.5rem;
+    background: #fff;
+}
+.profile-img{
+    text-align: center;
+}
+.profile-img img{
+    width: 70%;
+    height: 100%;
+}
+.profile-img .file {
+    position: relative;
+    overflow: hidden;
+    margin-top: -20%;
+    width: 70%;
+    border: none;
+    border-radius: 0;
+    font-size: 15px;
+    background: #212529b8;
+}
+.profile-img .file input {
+    position: absolute;
+    opacity: 0;
+    right: 0;
+    top: 0;
+}
+.profile-head h5{
+    color: #333;
+}
+.profile-head h6{
+    color: #0062cc;
+}
+.profile-edit-btn{
+    border: none;
+    border-radius: 1.5rem;
+    width: 70%;
+    padding: 2%;
+    font-weight: 600;
+    color: #6c757d;
+    cursor: pointer;
+}
+.proile-rating{
+    font-size: 12px;
+    color: #818182;
+    margin-top: 5%;
+}
+.proile-rating span{
+    color: #495057;
+    font-size: 15px;
+    font-weight: 600;
+}
+.profile-head .nav-tabs{
+    margin-bottom:5%;
+}
+.profile-head .nav-tabs .nav-link{
+    font-weight:600;
+    border: none;
+}
+.profile-head .nav-tabs .nav-link.active{
+    border: none;
+    border-bottom:2px solid #0062cc;
+}
+.profile-work{
+    padding: 14%;
+    margin-top: -15%;
+}
+.profile-work p{
+    font-size: 12px;
+    color: #818182;
+    font-weight: 600;
+    margin-top: 10%;
+}
+.profile-work a{
+    text-decoration: none;
+    color: #495057;
+    font-weight: 600;
+    font-size: 14px;
+}
+.profile-work ul{
+    list-style: none;
+}
+.profile-tab label{
+    font-weight: 600;
+}
+.profile-tab p{
+    font-weight: 600;
+    color: #0062cc;
+}
+
+/* Admin Dashboard */
+.table-container{
+    padding-top: 110px;
+}
+.table-container > table{
+    margin-top: 10px;
+}
+
+.table-container > .btn-outline-success{
+    color: #7B506F !important;
+    border-color: #7B506F !important;
+}
+
+.table-container > .btn-outline-success:hover{
+    background-color: #7B506F !important;
+    border-color: #7B506F !important;
+    color: #FFF !important;
+}
+
+/* Quiz Design */
+  #quiz {
+    margin: -44px 50px 0px;
+    position: relative;
+    width: calc(100% - 100px);
+  }
+  
+  #quiz h1 {
+    color: #FAFAFA;
+    font-weight: 600;
+    font-size: 36px;
+    text-transform: uppercase;
+    text-align: left;
+    line-height: 44px;
+  }
+  
+  #quiz button {
+    float: left;
+    margin: 8px 0px 0px 8px;
+    padding: 4px 8px;
+    background: #DBCDC6;
+    color: #1F1A38;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  #quiz button:hover {
+    background: #DBCDC6;
+    color: #FFF;
+  }
+  
+  #quiz button:disabled {
+    opacity: 0.5;
+    background: #DBCDC6;
+    color: #1F1A38;
+    cursor: default;
+  }
+  
+  #question {
+    padding: 20px;
+    background: #DBCDC6;
+    text-align: center;
+  }
+  
+  #question h2 {
+    margin-bottom: 16px;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  
+  #question input[type=radio] {
+    display: none;
+  }
+  
+  #question label {
+    display: inline-block;
+    margin: 4px;
+    padding: 8px;
+    background: #7B506F;
+    color: #1F1A38;
+    width: calc(50% - 8px);
+    min-width: 50px;
+    cursor: pointer;
+  }
+  
+  #question label:hover {
+    background: #7B506F;
+  }
+  
+  #question input[type=radio]:checked + label {
+    background: #7B506F;
+    color: #FAFAFA;
+  }
+  
+  #quiz-results {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 44px;
+    left: 0px;
+    background: #FAFAFA;
+    width: 100%;
+    height: calc(100% - 44px);
+  }
+  
+  #quiz-results-message {
+    display: block;
+    color: #00403C;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  #quiz-results-score {
+    display: block;
+    color: #7B506F;
+    font-size: 20px;
+  }
+  
+  #quiz-results-score b {
+    color: #7B506F;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  
+  #quiz-retry-button {
+  
+    float: left;
+    margin: 8px 0px 0px 8px;
+    padding: 4px 8px;
+    background: #9ACFCC;
+    color: #7B506F;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+    
+  }

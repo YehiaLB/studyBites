@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>studyBits - Main Page</title>
+        <title>studyBits - About</title>
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
         <link rel="stylesheet" href="css/general_styles.css" />
         <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="/images/favicon.ico" />
+
 
     </head>
     <body>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="#">
                 <img src="/images/logo.png" width="110" height="30" class="d-inline-block align-top" alt="" />
             </a>
+
+            <!-- <a class="navbar-brand" href="#">studyBits</a> -->
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -23,14 +27,24 @@
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="sign_in.html">Sign In</a>
+                    
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       My Profile
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="profile.html">Edit Profile</a>
+                        <a class="dropdown-item" href="my_courses.html">My Courses</a>
+                        <a class="dropdown-item" href="admin_dashboard.html">Admin Dashboard</a>
+                        <a class="dropdown-item" href="accomplishments.html">Accomplishments</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="index_signed_out.html">Sign Out</a>
+                      </div>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="About.html">About</a>
                     </li>
-
-                </ul>
+                </ul>   
                 <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Type to search courses" aria-label="Search" />
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>

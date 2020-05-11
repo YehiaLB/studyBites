@@ -33,7 +33,7 @@
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                      <a class="dropdown-item" href="profile.html">Edit Profile</a>
                      <a class="dropdown-item" href="my_courses.html">My Courses</a>
-                     <!-- <a class="dropdown-item" href="settings.html">Settings</a> -->
+                     <a class="dropdown-item" href="admin_dashboard.html">Admin Dashboard</a>
                      <a class="dropdown-item" href="accomplishments.html">Accomplishments</a>
                      <div class="dropdown-divider"></div>
                      <a class="dropdown-item" href="index_signed_out.html">Sign Out</a>
@@ -51,19 +51,17 @@
       </nav>
       <div class="container-fluid">
          <div class="row">
-            <!-- Side Bar Navigation for Course Content -->
-            <!-- <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"> -->
             <div class="d-none d-md-block bg-light sidebar">
                <div class="nav-side-menu sidebar-sticky">
                   <div class="brand">Course Title</div>
                   <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
                   <div class="menu-list">
                      <ul id="menu-content" class="menu-content collapse out">
-                        <li  data-toggle="collapse" data-target="#week1" class="collapsed active">
+                        <li  data-toggle="collapse" data-target="#week1" class="collapsed">
                            <a href="#"> &nbsp; &nbsp; Week #1 <span class="arrow"></span></a>
                         </li>
                         <ul class="sub-menu collapse" id="week1">
-                           <li class="active"><a href="#">Subject #1</a></li>
+                           <li><a href="#">Subject #1</a></li>
                            <li><a href="#">Subject #2</a></li>
                            <li><a href="#">Subject #3</a></li>
                            <li><a href="#">Subject #4</a></li>
@@ -94,36 +92,43 @@
                             <a href="course_support.html">
                             <i class="fa fa-copy fa-lg"></i>Support and Feedback</a>
                          </li>
-                         <li class="sub-menu">
-                           <a href="course_support.html">
+                         <li class="sub-menu active">
+                           <a href="course_quiz.html">
                            <i class="fa fa-paste fa-lg"></i>Final Quiz</a>
                         </li>
                      </ul>
                   </div>
                </div>
             </div>
-            <!-- <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10"> -->
             <div class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
                 <div class="course-content-display d-flex justify-content-between flex-wrap align-items-center pb-2 mb-3 border-bottom">
-                    <video width="800" controls>
-                        <source src="mov_bbb.mp4" type="video/mp4">
-                     </video>
-                     <div class="subtitles">
-                        <p><br>Insert the video subtitles here for accessibility.
-                           Insert the video subtitles here for accessibility.
-                           Insert the video subtitles here for accessibility.
-                           Insert the video subtitles here for accessibility.
-                           Insert the video subtitles here for accessibility.
-                           Insert the video subtitles here for accessibility.
-                           Insert the video subtitles here for accessibility.
-                           Insert the video subtitles here for accessibility.
-                           Insert the video subtitles here for accessibility.
-                        </p>
+                   <!-- Beginning of Quiz Content -->
+                  
+
+
+                   <div id="quiz">
+                     <h1 id="quiz-name"></h1>
+                     <button id="submit-button">Submit Answers</button>
+                     <button id="next-question-button">Next Question</button>
+                     <button id="prev-question-button">Previous</button>
+                     
+                     <div id="quiz-results">
+                       
+                       <p id="quiz-results-message"></p>
+                       <p id="quiz-results-score"></p>
+                       <button id="quiz-retry-button">Retry</button>
+                       
+                     </div>
+                   </div>
+
+                  <!-- End of Quiz Content -->
                 </div>
                 
             </div>
          </div>
       </div>
+      <script src="js/quiz.js"></script>
+
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

@@ -31,7 +31,7 @@
                       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="profile.html">Edit Profile</a>
                         <a class="dropdown-item" href="my_courses.html">My Courses</a>
-                        <a class="dropdown-item" href="settings.html">Settings</a>
+                        <a class="dropdown-item" href="admin_dashboard.html">Admin Dashboard</a>
                         <a class="dropdown-item" href="accomplishments.html">Accomplishments</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="index_signed_out.html">Sign Out</a>
@@ -49,22 +49,132 @@
             </div>
         </nav>
 
-
-        <!-- Add User Image -->
-        <!-- Add User Full Name -->
-        <!-- Add User Bio -->
-        <!-- Add User Join Date -->
-        <!-- Add About Me Section (gender, education and location) -->
-        <!-- Add Edit My Profile Button (edit the above, and bio) -->
+        <div class="container profile-container emp-profile">
+            <form method="post">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="profile-img">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS52y5aInsxSm31CvHOFHWujqUx_wWTS9iM6s7BAm21oEN_RiGoog"
+                             alt="user profile picture"/>
+                            <div class="file btn btn-lg btn-primary">
+                                Change Photo
+                                <input type="file" name="file"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="profile-head">
+                                    <h5>
+                                        Firstname Lastname
+                                    </h5>
+                                    <h6>
+                                        Small bio for title
+                                    </h6>
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">About</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <input type="submit" class="profile-edit-btn" name="btnAddMore" value="Edit Profile"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="profile-work">
+                            <a data-toggle="modal" href="#deactivate-modal">
+                                Deactivate Account
+                            </a>
+                            <!-- CONFIRMATION POP UP -->
+                            <div class="modal fade" id="deactivate-modal" role="dialog">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <h4>Are you sure you want to deactivate your account?</h4>
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Yes</button>
+                                      <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <br>
+                            <a data-toggle="modal" href="#delete-modal">Permanently Delete Account</a><br/>
+                            <!-- CONFIRMATION POP UP -->
+                            <div class="modal fade" id="delete-modal" role="dialog">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                    <h4>Are you sure you want to permanently delete your account from our database?</h4>
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Yes</button>
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="tab-content profile-tab" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                        <div class="row profile-details">
+                                            <div class="col-md-6">
+                                                <label>Name</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p>Firstname Lastname</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label>Email</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p>someone@gmail.com</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label>Phone</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p>123 456 7890</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label>Profession</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p>Music Composer</p>
+                                            </div>
+                                        </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>           
+        </div>
 
         <footer class="text-muted">
             <div class="container">
-                <br />
+                <br/>
                 <p class="float-right">
-                    <a href="#">Back to top</a>
                 </p>
                 <p>&copy; <strong>studyBites</strong> 2020 - a final project for CMPS 278 at The American University of Beirut.</p>
-                <br />
+                <br/>
             </div>
         </footer>
 
