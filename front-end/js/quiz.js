@@ -12,13 +12,13 @@ var all_questions = [{
       wrong: ["Pink", "Orange", "Green"]
     }
   }, {
-    question_string: "Insert question 1 here",
+    question_string: "Insert question 2 here",
     choices: {
       correct: "Blue",
       wrong: ["Pink", "Orange", "Green"]
     }
   }, {
-    question_string: "Insert question 1 here",
+    question_string: "Insert question 3 here",
     choices: {
       correct: "Blue",
       wrong: ["Pink", "Orange", "Green"]
