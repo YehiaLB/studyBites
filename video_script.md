@@ -5,7 +5,7 @@ Now, I'm going to showcase our work in the front-end. <br>
 I started by sketching a skeleton for the main pages using photoshop, and how I imagine them to eventually look like. <br>
 I then used Twitter's bootstrap to ensure a responsive design (breadcrumbs and burger buttons) <br>
 We think our website is accessible, since we included proper alt tags, used color with care and only used tables for data, never for layout. <br>
-We made use of our daily scrum-like meetings to catch up on each other's progress, while regularly pushing updates to our git repository.
+We made use of our daily scrum meetings (in the form of calls) to catch up on each other's progress, while regularly pushing updates to our git repository.
 
 ## Back-end Script
 In the Back-end part of the project, we used php alongside an SQL database in order to facilitate user login registration, <br>
