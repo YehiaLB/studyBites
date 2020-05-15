@@ -3,7 +3,7 @@ studyBites is a Coursera-like website, made for CMPS 278 capstone project. <br>
 It has two types of users, regular ones and admins. But more on that later, in the back-end part. <br>
 Now, I'm going to showcase our work in the front-end. <br>
 Moving from our roadmap, I started by sketching a skeleton for the main pages using photoshop, and how I imagine them to eventually look like. <br>
-I then used Twitter's bootstrap to ensure a responsive design (breadcrumbs and burger buttons) <br>
+I then used Twitter's bootstrap to ensure a responsive design (and what comes with it; breadcrumbs and burger buttons) <br>
 We think our website is accessible, since we included proper alt tags, used color with care and only used tables for data, never for layout. <br> We also made space for video subtitles.
 Also, we made use of our daily scrum meetings (in the form of calls) to catch up on each other's progress, while regularly pushing updates to our git repository.
 
