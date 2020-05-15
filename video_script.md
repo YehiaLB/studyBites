@@ -1,5 +1,5 @@
 ## Front-end Script
-- studyBites is a Coursera-like website, made for CMPS 278 capstone project. <br>
+studyBites is a Coursera-like website, made for CMPS 278 capstone project. <br>
 It has two types of users, regular ones and admins. But more on that later, in the back-end part. <br>
 Now, I'm going to showcase our work in the front-end. <br>
 I started by sketching the main pages, and how I imagine them to look like. <br>
@@ -10,7 +10,7 @@ We made use of our daily scrum-like meetings to catch up on each other's progres
 ## Back-end Script
 In the Back-end part of the project, we used php alongside an SQL database in order to facilitate user login registration, <br>
 storing courses and managing them, as well as other features such as user support and assessment managment. <br>
-We use php sessions in order to keep the user logged in and we used inline variables added to the URL in order to get certain data <br>
+We use php sessions in order to keep the user logged in and we used inline variables added to the URL in order to get certain data
 such as which course is being viewed etc... <br>
 Ajax was heavily used in order to display items such as courses and user information. <br>
 We planned on having an admin access page which we were unfortunatley unable to compelete on time, <br>
